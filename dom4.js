@@ -1,23 +1,24 @@
-const title = document.getElementById('judul');
-title.innerHTML = `<h1>Resep Ayam Geprek</h1>`;
+document.getElementsByTagName("body")[0].style.fontFamily = "roboto";
 
-const isi = document.getElementById('resep');
-isi.innerHTML = `
-<p>
-    <h1>Bahan-bahan</h1>
-    <ul>
-        <li> 2 Potong ayam </li>  
-        <li> 1 butir telur </li>  
-        <li> 5 sendok tepung terigu </li>  
-        <li> 3 sendok tepung maizena </li>  
-        <li> 3 siung bawang putih </li>  
-        <li> Secukupnya merica </li>  
-        <li> secukupnya garam </li>  
-        <li> Secukupnya minyak goreng </li>  
-        <li> 1 Batang serai </li>  
-    </ul>
-</p>
-`
+// memasukkan list
+
+const list = [
+    "2 potong ayam",
+    "1 butir telur",
+    "5 sendok tepung terigu",
+    "3 sendok tepung maizena",
+    "3 siung bawang putih",
+    "Secukupnya merica",
+    "Secukupnya garam",
+    "Secukupnya minyak goreng",
+    "Secukupnya serai",
+];
+
+list.forEach(li);
+
+function li(item, index) {
+    document.getElementById("resep").innerHTML += `<li>${item}</li>`;
+}
 
 const images = document.getElementById('photo');
 images.innerHTML = `
